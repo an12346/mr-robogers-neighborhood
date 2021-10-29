@@ -1,57 +1,51 @@
 $(document).ready(function(){
+  $("form#formOne").submit(function(event){
+    event.preventDefault();
 
-//let form = $("formOne")
-  let roboArray = [];
-//function roboArray(number) {
-  //let newList = "";
-  //let roboArray = [];
+    let roboArray = [];
+    let result;
 
-  function populateList(inArray){
-    let numInput = 1;
+
+    function populateList(inArray){
+    let counter = 1;
     inArray.forEach(function(element) {
-      $("#number1" - numInput).text(element);
-      numInput --;
+      $("#number1" - counter).text(element);
+      counter --;
     });
 
     roboArray.sort();
-    let numInput = 0;
+    let counter = 0;
 
     arrayG.forEach(function(element) {
-      if (roboArray[counter] === 1) {
-        let numInput
+      if (roboArray[i] === 1) {
+        result = "Beep";
+      } 
+      else if (roboArray[i] === 2) {
+        result = "Boop";
+      } 
+      else if (roboArray[i] === 3) {
+        result = "Won't you be my neighbor?"; 
       }
-      arrayG[numInput] = element.toUpperCase();
-      arrayG[numInput] = arrayG[counter].toUpperCase();
-      numInput --;
-    });
-  
-  
-  
-  //if(noInputtedNum(number)) {
-   // return false;
-  //} else {
-   // const roboArray = number.toString();
-  
-    roboArray.forEach(function(number) {
-      if(number[i] === 1) {
-        let number = "Boop";
-      } else if(number[i] === 2){
-        let number = "Beep";
-      } else (number[i] === 3); {
-        let number = "Won't you be by neighbor?";
-      }
+      else {
+        result = "Input a number"
+        }
 
-    
-    $(document).ready(function(){
-      $("form#formOne").submit(function(event){
-        event.preventDefault();
-        roboArray[i] = $("#item1").val();
-      
-      
-      })
-    });  
+        populateList(roboArray);
+        
+      $("#result").removeClass("hidden");
+        
+      });
+  }
+
+});
+  
 
       
-    });
+      
+  
+   
+
+      
+   
 
 
