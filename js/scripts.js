@@ -1,44 +1,57 @@
 $(document).ready(function(){
-  
-let form = $("formOne")
-  
-function roboArray(number) {
-  let newList = "";
 
-  if(noInputtedNum(number)) {
-    return false;
-  } else {
-    const roboArray = number.toString();
+//let form = $("formOne")
+  let roboArray = [];
+//function roboArray(number) {
+  //let newList = "";
+  //let roboArray = [];
+
+  function populateList(inArray){
+    let numInput = 1;
+    inArray.forEach(function(element) {
+      $("#number1" - numInput).text(element);
+      numInput --;
+    });
+
+    roboArray.sort();
+    let numInput = 0;
+
+    arrayG.forEach(function(element) {
+      if (roboArray[counter] === 1) {
+        let numInput
+      }
+      arrayG[numInput] = element.toUpperCase();
+      arrayG[numInput] = arrayG[counter].toUpperCase();
+      numInput --;
+    });
+  
+  
+  
+  //if(noInputtedNum(number)) {
+   // return false;
+  //} else {
+   // const roboArray = number.toString();
   
     roboArray.forEach(function(number) {
-      if(number[0] === 1 || number[0] === 2 || number[0] === 3) {
-        let number = 1;
-        let roboNum = number.toWords(1);
-
+      if(number[i] === 1) {
+        let number = "Boop";
+      } else if(number[i] === 2){
+        let number = "Beep";
+      } else (number[i] === 3); {
+        let number = "Won't you be by neighbor?";
       }
-    }
-  }
+
+    
+    $(document).ready(function(){
+      $("form#formOne").submit(function(event){
+        event.preventDefault();
+        roboArray[i] = $("#item1").val();
+      
+      
+      })
+    });  
+
+      
+    });
 
 
-}
-  
-  
-  });
-
-
-
-//form.submit(function(e) {
-   // e.preventDefault();
-    //numText = "";
-    //let num = $("#number1").val();
-
-    //let form = $("formOne");
-  //let numText = "";
-  //const array1 = [1,2,3,4,5];
-//let roboArray = [];
-//for (let i = 0; i <= 2; i +=1) {
-  //roboArray.push(array1[i]);
-  //roboArray.forEach(function(numbers) {
-   // console.log(roboArray);
-  //});
-//roboArray;
