@@ -4,10 +4,9 @@
 //})
 
 //Test 1:
+const array1 = [1];
+let roboArray = [];
 
-function populateList(inroboArray) {
-  let counter = 0;
-  let roboArray = [];
-  let robo = [1];
-
-}
+Array.forEach(function(element) {
+ roboArray.push(element); 
+});
