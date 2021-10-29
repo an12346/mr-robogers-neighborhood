@@ -17,13 +17,13 @@ $(document).ready(function(){
     let counter = 0;
 
     arrayG.forEach(function(element) {
-      if (roboArray[i] === 1) {
+      if (roboArray[i] == 1) {
         result = "Beep";
       } 
-      else if (roboArray[i] === 2) {
+      else if (roboArray[i] == 2) {
         result = "Boop";
       } 
-      else if (roboArray[i] === 3) {
+      else if (roboArray[i] == 3) {
         result = "Won't you be my neighbor?"; 
       }
       else {
