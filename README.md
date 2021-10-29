@@ -36,6 +36,10 @@ for (let i = 0; i <= 2; +=1) {
 roboArray
 Expected Ouput: [1,2,3];
 
+
+
+
+
 Describe:
 Test: "It should return 1 as the word "Beep" and 2, and 3 if those numbers are inputted"
 Code:
