@@ -1,61 +1,44 @@
-//$(document).ready(function(){
-  //let roboArray = []
-
-//})
-
-//const array1 = [1,2,3,4,5];
-//let roboArray = [];
-//for (let i = 0; i <= 2; i +=1) {
-  //roboArray.push(array1[i]);
-//}
-//roboArray;
-
-
 $(document).ready(function(){
-  let arrayG = []
+  
+let form = $("formOne")
+  
+function roboArray(number) {
+  let newList = "";
 
-  function populateList(inArray){
-    let counter = 1;
-    inArray.forEach(function(element) {
-      $("#listItem"+counter).text(element);
-      counter ++;
-    });
+  if(noInputtedNum(number)) {
+    return false;
+  } else {
+    const roboArray = number.toString();
+  
+    roboArray.forEach(function(number) {
+      if(number[0] === 1 || number[0] === 2 || number[0] === 3) {
+        let number = 1;
+        let roboNum = number.toWords(1);
+
+      }
+    }
   }
 
-$("#formOne").submit(function(event) {
-  event.preventDefault();
-  arrayG[0] = $("#number1").val();
-  arrayG[1] = $("#number2").val();
-  arrayG[2] = $("#number3").val();
-  arrayG[3] = $("#number4").val();
-  arrayG[4] = $("#number5").val();
 
-  arrayG.sort();
-  let counter = 0;
-
-  arrayG.forEach(function(element) {
-    arrayG[counter] = element.toUpperCase();
-    arrayG[counter] = arrayG[counter].toUpperCase();
-    counter ++;
+}
+  
+  
   });
 
 
 
+//form.submit(function(e) {
+   // e.preventDefault();
+    //numText = "";
+    //let num = $("#number1").val();
 
-$(document).ready(function(){
-  let roboArray = [];
-  let input = document.getElementById("#number");
-
-  
-  
-  let arrayG = []
-
-  function populateList(inArray){
-    let counter = 1;
-    inArray.forEach(function(element) {
-      $("#number"+counter).text(element);
-      counter ++;
-    });
-
-  }
-
+    //let form = $("formOne");
+  //let numText = "";
+  //const array1 = [1,2,3,4,5];
+//let roboArray = [];
+//for (let i = 0; i <= 2; i +=1) {
+  //roboArray.push(array1[i]);
+  //roboArray.forEach(function(numbers) {
+   // console.log(roboArray);
+  //});
+//roboArray;

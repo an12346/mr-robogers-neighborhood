@@ -18,7 +18,7 @@ Test: "It should return an array with only 1 and 2, if those numbers are inputte
 Code: 
 const array1 = [1,2,3,4,5];
 let roboArray = [];
-for (let i = 0; i <= 1; +=1) {
+for (let i = 0; i <= 1; i +=1) {
   roboArray.push(array1[i]);
 }
 roboArray;
@@ -30,13 +30,22 @@ Test: "It should return an array with only 1, 2, and 3 if those numbers are inpu
 Code:
 const array1 = [1,2,3,4,5];
 let roboArray = [];
-for (let i = 0; i <= 2; +=1) {
+for (let i = 0; i <= 2; i +=1) {
   roboArray.push(array1[i]);
 }
 roboArray
 Expected Ouput: [1,2,3];
 
-
+Describe: "It should return every element less than or equal to 3 into the word "Beep".
+Code:
+const array1 = [1,2,3,4,5];
+let roboArray = [];
+for (let i = 0; i <= 2; +=1) {
+  roboArray.push(array1[i]);
+  roboArray.forEach(function(numbers) {
+    console.log(roboArray);
+  });
+roboArray;
 
 
 
