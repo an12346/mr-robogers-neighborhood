@@ -9,7 +9,7 @@ $(document).ready(function(){
     function populateList(inArray){
     let counter = 1;
     inArray.forEach(function(element) {
-      $("#number1" - counter).text(element);
+      $("#number1" - counter).text(element)
       counter --;
     });
 
