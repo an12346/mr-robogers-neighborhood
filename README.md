@@ -33,7 +33,7 @@ let roboArray = [];
 for (let i = 0; i <= 2; +=1) {
   roboArray.push(array1[i]);
 }
-roboArray;
+roboArray
 Expected Ouput: [1,2,3];
 
 Describe:
