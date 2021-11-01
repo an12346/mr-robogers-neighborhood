@@ -7,27 +7,24 @@
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-3.6.0.js"></script>
-  <script src="js/scripts.js"></script>
   <title>Mr. Roboger's Neighborhood</title>
 </head>
 <body>
   <div class="container">
-    <h1>Mr. Robogers Neighborhood</h1>
-    <form id="formOne">
-      <div class="formGroup">
-        <label for="number1">Enter a number:</label>
-        <input id="number1" class="form-control" type="text">
-      </div>
-
-      <button type="submit" class="btn">Submit</button>
-
+    <h1>Mr. Roboger's Neighborhood</h1>
+    <form class="formOne">
+      <label for="input-one">Enter a number:</label>
+      <input type="text" id="input-one">
     </form>
-    
-    <div class="hidden" id="list">
-      <h2 id="result"></h2>
-    </div>
 
+    <button type="submit" class="sub-button" onclick="createNum()">Submit</button>
+  
+    <div class="result-container" id="hidden">
+      <ul class="result-numbers"></ul>
+    </div>
+  
   </div>
   
 </body>
+<script src="js/scripts.js"></script>
 </html>

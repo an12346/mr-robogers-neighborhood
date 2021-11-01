@@ -22,7 +22,7 @@ A website that has the user enter a number, returns every number before the inpu
 
 ## Known Bugs
 
-* Does not Display inputted number in decsending order
+* Does not display the array made from the inputted numbers
 * Does not change inputted numbers into the correct words
 
 ## License
@@ -32,9 +32,6 @@ A website that has the user enter a number, returns every number before the inpu
 [MIT](https://opensource.org/licenses/MIT)
 
 Copyright (c) 2021 Anna Pittman
-
-
-
 
 ## Specs
 
@@ -47,7 +44,6 @@ let roboArray = [];
 Array.forEach(function(element) {
  roboArray.push(element); 
 });
-
 Expected output: [1]
 
 
@@ -59,42 +55,29 @@ let roboArray = [];
 for (let i = 0; i <= 1; i +=1) {
   roboArray.push(array1[i]);
 }
-roboArray;
-
 Expected output: [1,2]
 
-Describe:
-Test: "It should return an array with only 1, 2, and 3 if those numbers are inputted"
+Describe:"It should return an array with only 1, 2, and 3 if those numbers are inputted"
+Test: roboArray [];
 Code:
 const array1 = [1,2,3,4,5];
 let roboArray = [];
 for (let i = 0; i <= 2; i +=1) {
   roboArray.push(array1[i]);
 }
-roboArray
 Expected Ouput: [1,2,3];
 
-Describe: "It should return every element less than or equal to 3 into the word "Beep".
+Describe: "It will return an array of numbers from zero, to the inputted number."
+Test: roboArray [];
 Code:
-const array1 = [1,2,3,4,5];
+let input =[5];
 let roboArray = [];
-for (let i = 0; i <= 2; +=1) {
-  roboArray.push(array1[i]);
-  roboArray.forEach(function(numbers) {
-    console.log(roboArray);
-  });
-roboArray;
-
-
-Describe:
-Test: "It should return 1 as the word "Beep" and 2, and 3 if those numbers are inputted"
-Code:
-const array1 = [1,2,3,4,5];
-let roboArray = [];
-for (let i = 0; i <= 2; +=1) {
-  roboArray.push(array1[i]);
-
+for (let i = 0; i <= input; i += 1){
+  roboArray.push(i);
 }
-roboArray;
-Expected Ouput: ["Beep", 2, 3];
+Exprected output: [0,1,2,3,4,5]
+
+
+
+
 
